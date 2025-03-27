@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSGP Platform</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="Functionality.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+    h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    .cards-container {
+    display: flex;
+    justify-content: center; /* Align items to the left */
+    gap: 10px; /* Add spacing between cards */
+    }
+
+    .card {
+    width: 400px;
+    height: 330px; /* Ensure all cards have equal height */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-color: white;
+    }
+
+    .card:hover {
+    transform: scale(1.05);
+    }
+
+    .card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    }
+
+    .card-image {
+    width: 100%;
+    height: 280px; /* Adjusted for alignment */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    }
+
+    .card-image h3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    }
+
+    .card-content {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    }
+    </style>
+
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">PSGP</div>
+    <ul class="nav-links">
+        <li><a href="newg.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="auth-buttons">
+        <button class="sign-in">Sign in</button>
+        <button class="signup-btn" onclick="openModal()"> Sign-up </button>
+        </div>
+</nav>
+
+<header class="hero">
+    <div class="hero-content">
+        <h1> Your one-Stop center For <span class="guide">GUIDANCE</span></h1>
+        <p>Join PSGP to access quality education and career opportunities.</p>
+        <div class="cta">
+            <input type="email" placeholder="Enter your email">
+            <button class="cta-button">Join Now</button>
+        </div>
+    </div>
+</header>
+
+<div class="modal" id="signupModal">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal()">X</button>
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <button onclick="submitForm()">Register</button>
+    </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid bg-cover mb-0">
+    <!-- Optional overlay for darker background -->
+    <div class="bg-overlay"></div>
+    <div class="container text-center" style="position: relative;">
+        <h1 class="display-4">Welcome to PSGP</h1>
+        <p class="lead">
+            Your one-stop platform for accessing personalized guidance on various services.
+        </p>
+        <p>
+            Discover how you can navigate complex processes and get accurate, real-time service
+            information—quickly and easily.
+        </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
+    </div>
+</div>
+
+<div class="section-container">
+
+    <h1>Our Services</h1>
+    <div class="cards-container">
+
+        <div class="card">
+            <a href="services.html">
+                <div class="card-image" style="background-image: url('close-up-doctor-with-stethoscope.jpg');">
+                    <h3>Health Care</h3>
+                </div>
+            </a>
+            <div class="card-content">
+                <p>Brief description of Service One.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="services.html">
+                <div class="card-image" style="background-image: url('medium-shot-smiley-woman-recording-lesson.jpg');">
+                    <h3>Education Services</h3>
+                </div>
+            </a>
+            <div class="card-content">
+                <p>Brief description of Service Two.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="services.html">
+                <div class="card-image" style="background-image: url('work-5382501_1280.jpg');">
+                    <h3>Business Services</h3>
+                </div>
+            </a>
+            <div class="card-content">
+                <p>Brief description of Service Three.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+<footer class="footer">
+    <ul class="footer-links">
+        <li><a href="newg.html">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <p>&copy; 2024 PSGP. All rights reserved.</p>
+</footer>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
