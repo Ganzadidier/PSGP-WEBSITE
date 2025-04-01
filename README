@@ -18,7 +18,7 @@ Ensure you have the following installed:
 ### **2️⃣ Clone the Repository**
 Open your terminal and run:
 ```bash
- git clone  https://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@github.com/Ganzadidier/PSGP-WEBSITE.git
+ git clone  https://github.com/Ganzadidier/PSGP-WEBSITE.git
 ```
 ---
 
@@ -34,4 +34,3 @@ To deploy the project:
 5. Open a Pull Request
 
 ---
-
