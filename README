@@ -1,0 +1,37 @@
+# One-Stop Digital Solution
+
+## 📌 Project Overview
+The **One-Stop Digital Solution** is a platform designed to help users search, access, and navigate bureaucratic services efficiently. It provides a **personalized roadmap** based on user input, offering step-by-step guidance to streamline complex processes.
+
+
+## 🛠️ Setup Guide
+Follow these steps to set up and run the project on your local machine.
+
+### **1️⃣ Prerequisites**
+Ensure you have the following installed:
+- **Node.js** (v16 or later) – [Download Here](https://nodejs.org/)
+- **Git** – [Download Here](https://git-scm.com/)
+- **VS Code (Optional)** – [Download Here](https://code.visualstudio.com/)
+
+---
+
+### **2️⃣ Clone the Repository**
+Open your terminal and run:
+```bash
+ git clone  https://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@github.com/Ganzadidier/PSGP-WEBSITE.git
+```
+---
+
+## 🔥 Deployment
+To deploy the project:
+- **Frontend:** Use [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/)
+
+## 🎯 Contribution Guide
+1. Fork the repository
+2. Create a new branch: `git checkout -b feature-branch`
+3. Commit your changes: `git commit -m 'Add new feature'`
+4. Push to your branch: `git push origin feature-branch`
+5. Open a Pull Request
+
+---
+

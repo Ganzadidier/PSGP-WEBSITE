@@ -1,0 +1,264 @@
+<!-- services.html -->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSGP Platform</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 120px;
+            background: rgb(193, 198, 225);
+        }
+
+        /* Header */
+        .header {
+            background: #004A99;
+            color: rgba(127, 195, 3, 0.9);
+            padding: 15px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        /* Container */
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Categories */
+        .category {
+            background: #ffffff;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .category h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Services Grid */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .service {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .service:hover {
+            background: #d1e7fd;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .category {
+                padding: 10px;
+            }
+
+            .services {
+                grid-template-columns: 1fr; /* Stack items on smaller screens */
+            }
+
+            .header {
+                font-size: 18px;
+                padding: 10px;
+            }
+        }
+        h2 {
+            color: #003366;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .columns {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .column {
+            width: 30%;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .search-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        #searchInput {
+            width: 80%;
+            padding: 12px;
+            border-radius: 25px;
+            border: 2px solid #0073e6;
+            font-size: 16px;
+            outline: none;
+            box-shadow: 0px 0px 5px rgba(0, 115, 230, 0.5);
+        }
+    </style>
+
+    <script>
+        function searchServices() {
+            let input = document.getElementById("searchInput").value.toLowerCase();
+            let items = document.querySelectorAll("ul li");
+
+            items.forEach(item => {
+                let text = item.textContent.toLowerCase();
+                if (text.includes(input)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">PSGP</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="hry.html">Contact</a></li>
+    </ul>
+    <div class="auth-buttons">
+        <button class="sign-in">Sign in</button>
+        <button class="sign-up">Sign up</button>
+    </div>
+</nav>
+
+<header class="services-header">
+    <h1> Service Providers Contacts</h1>
+    <p>Explore the various Service Providers Contacts.</p>
+</header>
+</section>
+
+
+<div class="container">
+
+    <div class="search-container">
+        <input type="text" id="searchInput" onkeyup="searchServices()" placeholder="Shakisha contact...">
+    </div>
+    <div class="section">
+        <h2>HEALTH CARE</h2>
+        <div class="columns">
+            <div class="column">
+                <ul>
+                    <li><a href="#">RSSB</a></li>
+                    <li><a href="#">MINISANTE</a></li>
+                    <li><a href="#">RBC</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="#">MUTUELLE DE SANTE</a></li>
+                    <li><a href="#">Prime Insurance</a></li>
+                    <li><a href="#">Amavuriro yigenga</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="#">Amavuriro ya leta</a></li>
+                    <li><a href="#">Radiant</a></li>
+                    <li><a href="#">Edencare</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Education</h2>
+        <div class="columns">
+            <div class="column">
+                <ul>
+                    <li><a href="#">MINEDUC</a></li>
+                    <li><a href="#">REB</a></li>
+                    <li><a href="#">NESA</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="#">RTB</a></li>
+                    <li><a href="#">Public Universities</a></li>
+                    <li><a href="#">Scholarships</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="#">Private Universities</a></li>
+                    <li><a href="#"> HEC</a></li>
+                    <li><a href="#">Education Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Business</h2>
+        <div class="columns">
+            <div class="column">
+                <ul>
+                    <li><a href="#">RDB</a></li>
+                    <li><a href="#">RRA</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="#">Urwego rwa abikorera</a></li>
+                    <li><a href="#">Kwandikisha business </a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="#">Business venues</a></li>
+                    <li><a href="#">Popular Business</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="hry.html">Contact</a></li>
+    </ul>
+    <p>&copy; 2024 PSGP. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
