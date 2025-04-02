@@ -19,6 +19,7 @@ Ensure you have the following installed:
 Open your terminal and run:
 ```bash
  git clone  https://github.com/Ganzadidier/PSGP-WEBSITE.git
+ navigate to the PSGP-WEBSITE directory and run index.html in your VScode
 ```
 ---
 
